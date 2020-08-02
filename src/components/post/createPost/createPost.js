@@ -46,6 +46,10 @@ const CreatePost = () => {
             .catch(res => toast.error(res.response.data.msg));
     }
 
+    function charLengthErr(){
+        toast.error('Post content must be 1000 characters or less.');
+    }
+
     if (postSuccess) {
         return (
             <Redirect to="/" />
@@ -71,7 +75,7 @@ const CreatePost = () => {
                         </div>
                         <textarea type="text" data-test="content" value={content} onChange={e => setContent(e.target.value)} required />
                     </ContentLabelDiv>
-                    <SubmitButton type="submit" value="CREATE" data-test="submit" />
+                    {charLength < 1000 ? <SubmitButton type="submit" value="CREATE" data-test="submit"/> : <SubmitButton onClick={charLengthErr} value="CREATE" />}
                 </form>
             </FormDiv>
         </Wrapper>
