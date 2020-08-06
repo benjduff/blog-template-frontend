@@ -17,7 +17,7 @@ const ErrComponent = () => {
 
     return (
         <ErrDiv>
-            <h1>OOPS.. There was an error getting the page content.</h1>
+            <h1>Content unavailable.</h1>
             <p>Please contact the site administrator for help!</p>
         </ErrDiv>
     )
