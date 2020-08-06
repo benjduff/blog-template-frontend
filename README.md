@@ -2,7 +2,7 @@
 A simple single page template. Host the project locally as your own personal note taking app or publish the project as your own custom blog. Sort notes by user defined catagories or by the date the note was added. 
 
 ### Usage
-This Create React App project is intended to be used with [Blog Template API](http://github.com/benjduff/blog-template-api). 
+This Create React App project is intended to be used with [Personal note taker API](http://github.com/benjduff/blog-template-api). 
 
 ###### Notes
 * To update the API request url navigate to ```src/config.js``` and replace ```baseUrl``` with desired url.
